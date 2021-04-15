@@ -708,6 +708,9 @@ body {
   padding: 81px 74px 89px 74px;
   background-repeat: no-repeat;
   background-size: cover;
+  /* background-position: bottom; */
+  background-position-y: bottom;
+  background-position-x: 70%;
 }
 
 .site-main .main-slider .slider-item__body {
@@ -1902,7 +1905,9 @@ body {
 .footer {
   background-image: url(../img/images/footer_bg.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
+  background-position-y: bottom;
+  background-position-x: center;
   position: relative;
 }
 
