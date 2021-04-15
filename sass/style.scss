@@ -1,0 +1,21 @@
+//Страницы
+@import './page/index.scss';
+
+@import '../fonts/fonts.scss';
+
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+
+@import 'base/elements.scss';
+@import 'base/common.scss';
+
+@import 'components/header/header.scss';
+@import 'components/main/main.scss';
+@import 'components/footer/footer.scss';
+
+//подключаемые элементы
+@import 'components/burger/burger.scss';
+@import 'components/cards/card.scss';
+
+@import 'base/mediarqst.scss';
+

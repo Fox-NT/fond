@@ -1,0 +1,630 @@
+@media screen and (max-width: 1440px) {
+    .head-container {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .site-header__menu-wrapper {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .main-container {
+        width: calc(100% - 360px);
+        padding-left: 25px;
+        padding-right: 25px;
+        margin: 0 auto;
+    }
+
+    .help-block__list {
+        flex-wrap: wrap;
+    }
+
+    .card-item {
+        margin-bottom: 20px;
+    }
+    
+    .site-main {
+        padding: 41px 25px 80px 25px;
+    }
+
+    .site-main .who-did-they-help .bg {
+        left: -230px;
+        width: 100vw;
+    }
+
+    .site-main__about {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .about {
+        
+        & .about__descr {
+            padding: 55px 0 148px 47px;
+
+            & .bg {
+                width: 100%;
+                height: 540px;
+            }
+        }
+    }
+
+    .fund-programs {
+        .container {
+            width: 100%;
+        }
+        .main-container {
+            max-width: none;
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    .subscribe {
+        padding-left: 25px;
+        padding-right: 25px;
+
+        &__wrapper {
+            margin-right: 50px;
+        }
+    }
+    
+    .footer {
+        .container {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    .main-promo__wrapper {
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .feedback-main__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+  
+    .nav-site__burger--mobile {
+        display: block;
+    }
+
+    .site-header {
+        .btn-link {
+            .wrapper {
+                flex-direction: column;
+                align-content: stretch;
+
+                .btn-link__item {
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                    &:nth-last-child(1) {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .site-header__menu-wrapper {
+        justify-content: center;
+        & .nav-site__list {
+        display: none;
+    }
+    }
+
+    
+    .menu__search {
+        padding: 10px 0;
+    }
+    .site-main .callboard {
+        padding-bottom: 6px;
+    }
+
+    .fund-programs {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+
+            .fund-programs__body {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            
+            .card-item {
+                margin-right: 0px;
+            }
+        }   
+    }
+
+    .main-promo {
+        background-color: #FE5A0E;
+        padding: 0;
+        position: relative;
+        margin-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .main-promo__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        .main-promo__img {
+            margin-top: 0px;
+        }
+        .main-promo__banner {
+            order: 1;
+            align-items: center;
+        }
+
+        .main-promo__descr {
+            margin-right: 0;
+        }
+    }
+    .about {
+        .row {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__descr {
+            padding: 55px 0 38px 47px;
+
+            .bg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            & &__item:nth-child(1) {
+                margin: 0;
+                padding: 0;
+                order: 1;
+            }
+
+            & &__item:nth-child(3) {
+                margin: 0;
+                padding: 0;
+                order: 2;
+            }
+
+            & &__item:nth-child(2) {
+                margin: 0;
+                padding: 0;
+                order: 3;
+            }
+        }
+    }
+
+    .subscribe {
+            flex-direction: column;
+            align-items: center;
+
+        &__wrapper {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    .footer {
+        .container {
+            padding: 0 150px;
+        }
+        &__wrapper {
+            flex-direction: column;
+            align-items: normal;
+        }
+        
+        .social__container {
+            flex-direction: column;
+
+            .legal-wrapper {
+                order: 1;
+            }
+            .social-list {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    
+    .main-container {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .site-header {
+        &__wrapper {
+            flex-direction: column;
+        }
+        .btn__list {
+            display: none;
+        }
+
+        &__title {
+            font-size: 10px;
+            line-height: 12px;
+        }
+
+        &__logo {
+            img {
+                width: 52px;
+                height: 52px;
+            }
+        }
+
+        &__menu {
+            .menu__search {
+                justify-content: center;
+                .menu__favorite {
+                    display: none;
+                }
+
+            }
+            
+        }
+    }
+
+    .site-main {
+        padding: 41px 25px 0px 25px;
+
+        padding-left: 0;
+        padding-right: 0;
+
+        .main-slider {
+            border: none;
+            .slider-item {
+                padding: 60px 24px 89px 24px;
+            }
+
+            .slider-nav {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0 15px;
+
+                &__btn-list {
+                    order: 1;
+                    margin-top: 32px;
+                }
+            }
+        }
+        
+        .help-block {
+            padding: 39px 0;
+            padding-left: 14px;
+
+            .bg {
+                display: none;
+            }
+
+            &__show-all {
+                text-align: left;
+                align-items: flex-start;
+                flex-shrink: 1;
+                &::before {
+                    display: none;
+                }
+                a {
+                    flex-shrink: 1;
+                }
+            }
+
+            &__list {
+                margin-bottom: 30px;
+            }
+
+            &__title {
+                font-size: 30px;
+                line-height: 42px;
+                margin-bottom: 30px;
+                padding-left: 12px;
+            }
+        }
+
+        .who-did-they-help {
+            .bg {
+                left: 0;
+                width: 100%;
+                display: none;
+            }
+            background-color: $background-grey-6;
+        }
+
+        .callboard {
+            background-color: $background-grey-6;
+        }
+    }
+
+    .site-main__about {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .about {
+        .about__title {
+            padding: 0 15px;
+            padding-top: 20px;
+            margin-bottom: 20px;
+            font-size: 30px;
+            line-height: 42px;
+        }
+        .links-list {
+            padding: 16px 16px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+            
+            &__item {
+                    margin-right: 18px;
+                }
+        }
+
+        & &__descr {
+            padding: 55px 32px 40px 24px;
+            background-color: $background-grey-6;
+
+            .bg {
+                display: none;
+            }
+        }
+
+        &-card {
+            padding: 0 15px;
+        }
+
+        & &-card__item {
+            span {
+                right: 5px;
+            }
+
+            &:nth-child(2) {
+                span {
+                    right: 5px;
+                }
+            }
+
+            &:nth-child(3) {
+                span {
+                    left: 5px;
+                }
+            }
+        }
+
+    }
+
+
+
+
+
+    .site-main__wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-aside {
+        margin: 0 auto;
+        
+        .aside-block {
+            max-width: none;        
+        }
+    }
+    .fund-programs__wrapper {
+        .card-item {
+            max-width: 348px;
+
+            .card-head {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    }
+
+    .fund-programs {
+
+        &__show-all::before {
+            display: none;
+        }
+        &__body {
+            margin-bottom: 40px;
+            padding: 0 18px;
+
+        }
+        &__title {
+            font-size: 30px;
+            line-height: 42px;
+        }
+
+        .fund-block__item {
+            margin-bottom: 40px;
+        }
+    }
+
+    .main-promo {
+        img {
+            width: 100%;
+            height: auto;
+        }
+        &__wrapper {
+            .main-promo__descr {
+                margin-right: 0;
+                padding: 55px 23px;
+                padding-bottom: 0;
+                margin-bottom: 29px;
+            }
+        }
+    }
+
+    .feedback-main {
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-bottom: 45px;
+
+        &__wrapper {
+            margin-bottom: 0px;
+        }
+
+        &__slider {
+            min-height: 500px;
+            margin-top: 30px;
+            .item {
+                max-width: 243px;
+                margin-right: 70px;
+                &:nth-child(2n) {
+                    margin-top: 70px;
+                    align-self: flex-start;
+                }
+            }
+            .item__body {
+                max-width: 216px;
+                padding: 24px 15px 16px 15px;
+                bottom: -150px;
+                right: -30px;
+            }
+            .item__img {
+                img {
+                    max-width: 243px;
+                }
+            }
+        }
+
+        &__title {
+            font-size: 30px;
+            line-height: 42px;
+        }
+
+        &__link {
+            margin-bottom: 40px;
+        }
+    }
+        
+
+    .subscribe {
+            padding-top: 40px;
+            padding-left: 14px;
+            padding-right: 14px;
+            padding-bottom: 40px;
+
+        &__title {
+            font-size: 30px;
+            line-height: 42px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .footer {
+        .container {
+            padding: 0 15px;
+        }
+        .column__title {
+            margin-bottom: 20px;
+        }
+        .column__wrapper {
+            margin-bottom: 0;
+
+            .column__body {
+                margin-right: 10px;
+            }
+        }
+
+        &__wrapper {
+            padding-bottom: 40px;
+            border: none;
+        }
+        
+        .social__container {
+            padding-bottom: 40px;
+            padding-top: 0;
+
+            .legal-wrapper {
+                padding-top: 54px;
+                flex-direction: column;
+            }
+
+            .qr-code {
+                margin-bottom: 22px;
+            }
+            .social-list__wrapper {
+                flex-direction: column;
+                width: 100%;
+            }
+            .social-list {
+                width: 100%;
+                justify-content: space-around;
+                margin-right: 0;
+            }
+        }
+
+        .copyright {
+            padding: 26px 36px;
+            text-align: center;
+        }
+
+        .btn_up {
+            bottom: 105px;
+            right: 17px;
+        }
+    }
+
+    .nav-site__burger--mobile {
+        top: 20px;
+        right: 20px;
+        z-index: 555555;
+    }
+
+    .burger_active {
+      
+        .burger-m {
+            display: none;
+        }
+    }
+
+    .mobile-menu--active {
+        top: 0;
+        width: 100%;
+        overflow: auto;
+        transition: 0.3s top linear;
+
+        .menu__close {
+            display: none;
+
+        }
+    }
+
+
+
+    .burger_active::before {
+        -webkit-transform: rotate(
+    -45deg
+    );
+        transform: rotate(
+    -45deg
+    );
+        bottom: 12px;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        width: 100%;
+    }
+}

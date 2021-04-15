@@ -1,0 +1,18 @@
+.btn {
+    background-color: $background-orange;
+    color: $white;
+    display: inline-block;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+
+.fav-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: $background-white;
+    @include flex(row, center, center);
+    cursor: pointer;
+}

@@ -1,0 +1,191 @@
+.footer {
+    background-image: url(../../../img/images/footer_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &__wrapper {
+        padding-top: 80px;
+        padding-bottom: 52px;
+        border-bottom: 1px solid $border-grey;
+        @include flex(row, space-between, flex-start);
+    }
+
+    .column__title {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 23px;
+        color: $text-black;
+        margin-bottom: 36px;
+    }
+
+    &__item {
+        font-size: 16px;
+        line-height: 23px;
+        margin-bottom: 16px;
+
+        a {
+            color: $text-grey-3;
+            @include hover() {
+                color: $text-orange;
+            }
+        }
+    }
+
+    &__item-link {
+        a {
+            font-weight: bold;
+        }
+    }
+
+    &__item-link--active {
+        a {
+            color: $text-orange;
+    
+        }
+    }
+
+    .column__wrapper {
+        @include flex(row, space-between, flex-start);
+        
+        .column__body {
+            margin-right: 100px;
+
+            &:nth-last-child(1) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__phone {
+        @include flex(column, flex-start, flex-start);
+        font-weight: bold;
+        font-size: 21px;
+        line-height: 36px;
+        color: $text-black;
+
+        a {
+            @include flex(row, flex-start, center);
+            @include bef {
+                content: url(../../../img/svg/footer_phone.svg);
+                opacity: 0;
+                margin-right: 10px;
+            }
+
+            &:nth-child(1)::before {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__email {
+        @include flex(column, flex-start, flex-start);
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 30px;
+        color: $text-black;
+
+        a {
+            @include flex(row, flex-start, center);
+            @include bef {
+                content: url(../../../img/svg/footer_mail.svg);
+                opacity: 1;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &__feedback {
+        padding: 0 0 0 30px;
+        
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    &__social {
+        @include flex(row, flex-start, center);
+        padding-left: 25px;
+
+        a {
+            margin-right: 10px;
+
+            &:nth-last-child(1) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .social__container {
+        @include flex(row, space-between, center);
+        padding: 95px 0 145px 0;
+
+        .legal-wrapper {
+            @include flex(row, flex-start, center);
+
+            .qr-code {
+                margin-right: 40px;
+            }
+
+            .legal-information {
+                max-width: 400px;
+                width: 100%;
+                font-size: 16px;
+                line-height: 28px;
+                color: $text-grey-3;
+            }
+        }
+        .social-list__wrapper {
+            display: flex;
+        }
+        .social-list {
+            @include flex(row, flex-start, center);
+            margin-right: 10px;
+
+            .social__item {
+                margin-right: 10px;
+                width: 70px;
+                height: 70px;
+                background-color: $background-white;
+                border-radius: 50%;
+
+                &:nth-last-child(1) {
+                    margin-right: 0;
+                }
+
+                @include flex(row, center, center);
+
+                i{
+                    color: $text-grey-2;
+                    font-size: 21px;
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    background-color: $background-orange;
+    @include flex(row, center, center);
+    padding: 12px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 37px;
+    color: $text-white;
+}
+
+.btn_up{
+    position: absolute;
+    bottom: 85px;
+    right: 72px;
+    width: 60px;
+    height: 60px;
+    background-color: $background-orange;
+    border: 2px solid $border-white;
+    border-radius: 50%;
+    box-shadow: 0px 10px 20px rgba(254, 90, 14, 0.3);
+    @include flex(row, center, center);
+    font-size: 21px;
+    color: $text-white;
+    cursor: pointer;
+}

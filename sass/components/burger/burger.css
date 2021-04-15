@@ -1,0 +1,145 @@
+.nav-site__burger--mobile {
+  display: none;
+  position: absolute;
+  width: 36px;
+  height: 20px;
+  z-index: 2000;
+  text-align: 0;
+  top: 160px;
+  right: 36px;
+}
+
+.nav-site__burger--mobile span {
+  position: absolute;
+  background-color: #828282;
+  right: 0;
+  width: 36px;
+  height: 2px;
+  top: 9px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.burger_active span {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.nav-site__burger--mobile::after {
+  top: 0;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-site__burger--mobile::before {
+  bottom: 0;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.burger_active::after {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-site__burger--mobile::after {
+  content: '';
+  background-color: #828282;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+}
+
+.nav-site__burger--mobile::before {
+  content: '';
+  background-color: #828282;
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  right: 0;
+}
+
+.burger_active::before {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  bottom: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 50%;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: -1410px;
+  right: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  z-index: 11;
+  margin: 0;
+  padding: 0;
+  padding-top: 80px;
+  display: block;
+}
+
+.mobile-menu--active {
+  top: 0;
+  overflow: auto;
+  -webkit-transition: 0.3s top linear;
+  transition: 0.3s top linear;
+}
+
+.subhide {
+  display: none;
+}
+
+.mobile-link {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.mobile-menu__title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  text-transform: uppercase;
+  padding: 40px 30px 24px 30px;
+  border-bottom: 1px solid #E2E2E2;
+}
+
+.mobile-menu__item {
+  padding: 24px 30px;
+  font-size: 18px;
+  line-height: 22px;
+  border-bottom: 1px solid #E2E2E2;
+}
+
+.mobile-menu__item a {
+  color: #1A252C;
+}
+
+.mobile-menu {
+  width: 50%;
+  top: 220px;
+}
+
+.mobile-menu .menu__favorite {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+/*# sourceMappingURL=burger.css.map */
