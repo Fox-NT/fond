@@ -1,7 +1,10 @@
 .footer {
     background-image: url(../img/images/footer_bg.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
+    /* background-position: bottom; */
+    background-position-y: bottom;
+    background-position-x: center;
     position: relative;
 
     &__wrapper {
