@@ -1642,7 +1642,7 @@ body {
 }
 
 .feedback-main__slider .item__img .play::before {
-  content: url(../../../img/svg/play.svg);
+  content: url(../img/svg/play.svg);
   display: block;
 }
 
@@ -1900,7 +1900,7 @@ body {
 }
 
 .footer {
-  background-image: url(../../../img/images/footer_bg.jpg);
+  background-image: url(../img/images/footer_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -2020,7 +2020,7 @@ body {
 .footer__phone a::before {
   content: "";
   display: inline-block;
-  content: url(../../../img/svg/footer_phone.svg);
+  content: url(../img/svg/footer_phone.svg);
   opacity: 0;
   margin-right: 10px;
 }
@@ -2068,7 +2068,7 @@ body {
 .footer__email a::before {
   content: "";
   display: inline-block;
-  content: url(../../../img/svg/footer_mail.svg);
+  content: url(../img/svg/footer_mail.svg);
   opacity: 1;
   margin-right: 10px;
 }
