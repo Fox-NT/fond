@@ -1,5 +1,5 @@
 .footer {
-    background-image: url(img/images/footer_bg.jpg);
+    background-image: url(../img/images/footer_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -67,7 +67,7 @@
         a {
             @include flex(row, flex-start, center);
             @include bef {
-                content: url(../../../img/svg/footer_phone.svg);
+                content: url(../img/svg/footer_phone.svg);
                 opacity: 0;
                 margin-right: 10px;
             }
@@ -88,7 +88,7 @@
         a {
             @include flex(row, flex-start, center);
             @include bef {
-                content: url(../../../img/svg/footer_mail.svg);
+                content: url(../img/svg/footer_mail.svg);
                 opacity: 1;
                 margin-right: 10px;
             }
