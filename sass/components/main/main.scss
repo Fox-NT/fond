@@ -21,7 +21,9 @@
             padding: 81px 74px 89px 74px;
             background-repeat: no-repeat;
             background-size: cover;
-
+            /* background-position: bottom; */
+            background-position-y: bottom;
+            background-position-x: 70%;
             &__body {
                 max-width: 520px;
                 width: 100%;
