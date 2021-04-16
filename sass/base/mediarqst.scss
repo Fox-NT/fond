@@ -256,8 +256,11 @@
     }
 
     .site-header {
+        .head-container {padding: 0;}
         &__wrapper {
             flex-direction: column;
+            padding: 10px 20px 10px 13px;
+            align-items: flex-start;
         }
         .btn__list {
             display: none;
@@ -266,6 +269,16 @@
         &__title {
             font-size: 10px;
             line-height: 12px;
+
+            .title {
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+
+        .btn-link {
+            margin: 0 auto;
+            margin-top: 100px;
         }
 
         &__logo {
@@ -283,6 +296,8 @@
                 }
 
             }
+            margin-top: -210px;
+            margin-bottom: 100px;
             
         }
     }
@@ -591,7 +606,7 @@
     .nav-site__burger--mobile {
         top: 20px;
         right: 20px;
-        z-index: 555555;
+        z-index: 2;
     }
 
     .burger_active {
@@ -607,10 +622,10 @@
         overflow: auto;
         transition: 0.3s top linear;
 
-        .menu__close {
-            display: none;
+        // .menu__close {
+        //     display: none;
 
-        }
+        // }
     }
 
 

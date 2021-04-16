@@ -192,6 +192,10 @@
                 padding: 19px 0 17px 0;
                 position: relative;
 
+                svg {
+                    margin-left: 6px;
+                }
+
 
                 @include hover() {
                     color: $text-orange;
@@ -218,6 +222,9 @@
             .menu__favorite {
                 a {
                 margin-right: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
                 font-weight: 500;
                 font-size: 16px;
@@ -258,7 +265,8 @@
                         outline: none;
                         border: 1px solid $border-grey;
                         border-radius: 24px;
-                        padding: 12px 19px 12px 19px;
+                        // padding: 12px 19px 12px 19px;
+                        padding: 9px 38px 13px 19px;
                         max-height:  36px;
                         max-width: 344px;
                         width: 100%;

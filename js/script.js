@@ -20,7 +20,7 @@ submenuBtn.addEventListener('click', e => {
 submenuClose.addEventListener('click', () => {
 	document.body.classList.toggle('over_hide');
 	burgerMenu.classList.toggle('mobile-menu--active');
-	burger.classList.toggle('burger_active');
+	// burger.classList.toggle('burger_active');
 });
 
 const burger = document.querySelector('.nav-site__burger--mobile'),
@@ -31,12 +31,12 @@ const burger = document.querySelector('.nav-site__burger--mobile'),
 function closeBurgerMenu() {
 	document.body.classList.remove('over_hide');
 	burgerMenu.classList.remove('mobile-menu--active');
-	burger.classList.remove('burger_active');
+	// burger.classList.remove('burger_active');
 }
 burger.addEventListener('click', () => {
 	document.body.classList.toggle('over_hide');
 	burgerMenu.classList.toggle('mobile-menu--active');
-	burger.classList.toggle('burger_active');
+	// burger.classList.toggle('burger_active');
 });
 
 document.addEventListener('keydown', e => {
