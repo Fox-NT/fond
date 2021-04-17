@@ -47,3 +47,11 @@ document.addEventListener('keydown', e => {
 		closeBurgerMenu();
 	}
 });
+
+const filterBtn = document.querySelector('.filter-btn'),
+	filter = document.querySelector('.filter');
+
+filterBtn.addEventListener('click', e => {
+	e.preventDefault();
+	filter.classList.toggle('mobile-off');
+});

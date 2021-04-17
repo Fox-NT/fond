@@ -1,0 +1,248 @@
+.feedbackpage {
+    .site-main {
+        padding-top: 0;
+        padding-bottom: 20px;
+        &__wrapper {
+            width: 100%;
+        }
+        .container {
+            padding-top: 40px;
+        }
+        .main-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    
+    .feedpage {
+        padding: 80px 0;
+        padding-top: 0;
+        padding-bottom: 20px;
+
+        &-list {
+            @include flex(row, space-between, center);
+            margin-bottom: 66px;
+            flex-wrap: wrap;
+            margin-bottom: 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid $border-grey;
+        }
+
+
+        
+        &__title {
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 58px;
+            color: $text-black;
+            margin-bottom: 40px;
+        }
+
+        &-tabs {
+            border-bottom: 1px solid $border-grey;
+            margin-bottom: 40px;
+            &__list {
+                @include flex(row, flex-start, center);
+            }
+
+            &__item {
+                margin-right: 40px;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+                color: #C4C4C4;
+                padding-bottom: 19px;
+                position: relative;
+                cursor: pointer;
+                user-select: none;
+
+                &--active {
+                    color: $text-black;
+
+                    @include bef() {
+                        position: absolute;
+                        width: 100%;
+                        height: 4px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: $background-orange;
+                    }
+                }
+                &:nth-last-child(1) {
+                    margin-right: 0;
+                }
+            }
+        }
+
+    }
+    
+    .nav-page {
+        @include flex(row, center, center);
+
+        &__list {
+            @include flex(row, center, center);
+        }
+        .prev-page {
+            margin-right: 13px;
+        }
+
+        .next-page {
+            margin-left: 13px;
+        }
+
+    &__btn {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background-color: $background-grey-5;
+        @include flex(row, center, center);
+    }
+
+    &__link {
+        font-size: 18px;
+        line-height: 18px;
+        width: 24px;
+        height: 24px;
+        @include flex(row, center, center);
+        flex-shrink: 0;
+        color: $text-black;
+        margin-left: 8px;
+        margin-right: 8px;
+
+        &--active {
+            background-color: $background-orange;
+            box-shadow: 0px 0px 10px rgba(254, 90, 14, 0.2);
+            border-radius: 12px;
+            color: $text-white;
+            width: 52px;
+            height: 52px;
+            @include flex(row, center, center);
+        }
+    }
+}
+
+    .feedpage-block {
+        .item {
+            margin-right: 10px;
+            max-width: 514px;
+            position: relative;
+            margin-bottom: 130px;
+        
+            &__img {
+                position: relative;
+        
+                .play {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    width: 72px;
+                    height: 72px;
+                    border-radius: 50%;
+                    background-color: rgba(255, 255, 255, 0.4);
+                    @include flex(row, center, center);
+                    cursor: pointer;
+        
+                    &::before {
+                        content: url(../img/svg/play.svg);
+                        display: block;
+                    }
+                }
+            }
+        
+            &__body {
+                max-width: 432px;
+                background-color: $background-grey-5;
+                padding: 32px 46px 23px 36px;
+                @include flex(column, flex-start, flex-start);
+                position: absolute;
+                bottom: -50px;
+                right: -20px;
+        
+                .feedback-name {
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: $text-grey-3;
+                    margin-bottom: 14px;
+                    text-transform: uppercase;
+                }
+        
+                .feedback-text {
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: $text-grey-3;
+                }
+            }
+        }
+    }
+    .subscribe {
+        border: none;
+    }
+
+    @media screen and (max-width: 1440px) {
+        .main-container {
+            width: 100%;
+        }
+        .feedpage-block {
+            .item {
+                max-width: 340px;
+                position: relative;
+                margin-bottom: 120px;
+                &__body {
+                    max-width: 268px;
+                    background-color: #F7F7F6;
+                    padding: 33px 20px 34px 18px;
+                    bottom: -100px;
+                    right: 30px;
+                }
+                img {
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+
+    @media screen and (max-width:1170px) {
+        .feedpage-list {
+            justify-content: center;
+        }
+        
+    }
+
+    @media screen and (max-width:950px) {
+        .main-wrapper {
+            flex-direction: column;
+            align-items:center;
+        }
+        .page-off {
+            display: none;
+        }
+
+        #breadcrumbs {
+            margin-bottom: 40px;
+        }
+
+        .feedpage {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .feedpage__title {
+            font-size: 30px;
+            line-height: 42px;
+        }
+        
+        .feedpage-tabs__item {
+            margin-right: 18px;
+        }
+        
+        .nav-page {
+            margin-bottom: 60px;
+        }
+    }
+}

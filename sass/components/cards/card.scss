@@ -1,6 +1,7 @@
 .card-item {
     @include flex(column, center, center);
     max-width: 344px;
+    // position: relative;
     width: 100%;
     border: 1px solid $border-grey;
     box-sizing: border-box;

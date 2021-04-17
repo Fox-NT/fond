@@ -16,6 +16,12 @@
 //подключаемые элементы
 @import 'components/burger/burger.scss';
 @import 'components/cards/card.scss';
+@import 'components/bread/breadcrumbs.scss';
 
 @import 'base/mediarqst.scss';
 
+
+@import './page/mission.scss';
+@import './page/item.scss';
+@import './page/feedback.scss';
+@import './page/help.scss';

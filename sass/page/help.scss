@@ -1,0 +1,403 @@
+.help {
+    .card-item {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .site-main {
+        padding-top: 0;
+        .container {
+            padding-top: 40px;
+        }
+        .main-wrapper {
+            display: flex;
+        }
+    }
+
+    .help-block {
+        padding-top: 0;
+        &__list {
+            flex-wrap: wrap;
+            margin-bottom: 0;
+            padding-bottom: 40px;
+            border-bottom: 1px solid $border-grey;
+        }
+        &__descr {
+            font-size: 18px;
+            line-height: 32px;
+            margin-bottom: 35px;
+
+            .help-link {
+                display: none;
+                margin-top: 16px;
+                color: $text-orange;
+                text-decoration: underline;
+            }
+        }
+    }
+    .filter-container {
+        margin-bottom: 40px;
+        .filter {
+            padding-bottom: 33px;
+            border-bottom: 1px solid $border-grey;
+            &__form {
+                display: flex;
+                align-items: center;
+            }
+
+            &__elem {
+                width: 100%;
+                max-width: 384px;
+                margin-right: 20px;
+            }
+
+            &__field {
+                position: relative;
+                @include aft() {
+                    content:url(../img/svg/filter.svg);
+                    position: absolute;
+                    bottom: 15px;
+                    right: 20px;
+                    margin: auto 0;
+                }
+                label {
+                    font-weight: bold;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: $text-black;
+                    margin-bottom: 8px;
+                }
+
+                input {
+                    background-color: $background-white;
+                    border: 1px solid $border-grey;
+                    border-radius: 2px;
+                    width: 100%;
+                    padding: 15px 39px 15px 14px;
+                    font-size: 16px;
+                    line-height: 20px;
+
+                    &::placeholder {
+                        color: #C4C4C4;
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+
+                @include flex(column, flex-start, flex-start);
+            }
+
+            &__submit {
+                align-self: flex-end;
+
+                a {
+                    padding: 14px 32px;
+                    background-color: $background-white;
+                    color: $text-black;
+                    border: 2px solid $border-orange;
+                }
+            }
+            &-list__wrapper {
+                @include flex(row, space-between, center);
+                padding-top: 20px;
+            }
+            &-clear {
+                flex-shrink: 0;
+                font-size: 14px;
+                line-height: 28px;
+                text-decoration: underline;
+                color: #000000;
+            }
+            &-list {
+                @include flex(row, flex-start, center);
+                flex-wrap: wrap;
+                .filter-item {
+                    min-width: 175px;
+                    padding-left: 13px;
+                    border: 1px solid $border-grey;
+                    border-radius: 15px;
+                    font-size: 14px;
+                    line-height: 28px;
+                    @include flex(row, flex-start, center);
+                    position: relative;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                    &__del {
+                        position: absolute;
+                        top: 2px;
+                        right: 10px;
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    .create-ad-block {
+        margin-bottom: 40px;
+        .create-ad {
+            width: 100%;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            color: $text-white;
+            padding: 14px 0;
+            border-radius: 2px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
+    .nav-page {
+            @include flex(row, center, center);
+
+            &__list {
+                @include flex(row, center, center);
+            }
+            .prev-page {
+                margin-right: 13px;
+            }
+
+            .next-page {
+                margin-left: 13px;
+            }
+
+        &__btn {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background-color: $background-grey-5;
+            @include flex(row, center, center);
+        }
+
+        &__link {
+            font-size: 18px;
+            line-height: 18px;
+            width: 24px;
+            height: 24px;
+            @include flex(row, center, center);
+            flex-shrink: 0;
+            color: $text-black;
+            margin-left: 8px;
+            margin-right: 8px;
+
+            &--active {
+                background-color: $background-orange;
+                box-shadow: 0px 0px 10px rgba(254, 90, 14, 0.2);
+                border-radius: 12px;
+                color: $text-white;
+                width: 52px;
+                height: 52px;
+                @include flex(row, center, center);
+            }
+        }
+    }
+
+    .download-statement {
+        background-color: $background-grey-6;
+        .download-wrapper {
+            @include flex(row, space-between, center);
+            padding: 80px 0;
+        }
+
+        .download-text {
+            max-width: 555px;
+            width: 100%;
+            font-size: 18px;
+            line-height: 32px;
+            color: $text-black;
+            margin-bottom: 40px;
+        }
+
+        .download-link {
+            a {
+                @include flex(row, flex-start, center);
+                font-size: 18px;
+                line-height: 32px;
+                text-decoration: underline;
+                color: $text-orange;
+                @include bef() {
+                    content: url(../img/svg/pdf.svg);
+                    margin-right: 24px;
+                }
+            }
+        }
+    }
+    .can-you-help {
+        padding: 80px 0 123px 0;
+        @include flex(column);
+        &-wrapper {
+            padding: 0 15px;
+        }
+        &__title {
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 58px;
+            color: #000000;
+            margin-bottom: 30px;
+        }
+
+        &__descr {
+            font-size: 18px;
+            line-height: 32px;
+            color: $text-black;
+            margin-bottom: 60px;
+        }
+
+        &__list {
+            @include flex(row, space-between, center);
+        }
+
+        .cyh-item {
+            margin-bottom: 60px;
+            max-width: 455px;
+            &__img {
+                margin-bottom: 8px;
+            }
+            &__title {
+                margin-bottom: 8px;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 32px;
+                color: $text-black;
+            }
+            &__descr {
+                font-size: 18px;
+                line-height: 32px;
+                color: $text-grey-3;
+            }
+
+        }
+    }
+    .filter-mobile {
+        padding-bottom: 40px;
+        border-bottom: 1px solid $border-grey;
+        .filter-btn {
+            background-color: $background-white;
+            width: 100%;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            color: $text-black;
+            padding: 14px 0;
+            border-radius: 2px;
+            text-align: center;
+            text-transform: uppercase;
+            border: 1px solid $border-orange;
+            border-radius: 2px;
+        }
+    }
+    
+    .main-promo {
+        margin-top: 0;
+    }
+
+    .first {
+        display: block;
+    }
+    .second {
+        display: none;
+    }
+    .mobile-on {
+        display: none;
+    }
+    .mobile-off {
+        display: block;
+    }
+
+    @media screen and (max-width: 1440px) {
+        .main-container {
+            width:100%;
+        }
+    }
+
+    @media screen and (max-width: 1165px) {
+        .help-block__list {
+            justify-content: center;
+        }
+    }
+
+    @media screen and (max-width: 950px) {
+        .nav-page {
+            margin-bottom: 40px;
+        }
+        .mobile-on {
+            display: block;
+        }
+        .mobile-off {
+            display: none;
+        }
+
+        .create-ad-block {
+            padding: 0 15px;
+        }
+        #breadcrumbs {
+            margin-bottom: 16px;
+            padding: 0 16px;
+        }
+        .download-statement {
+            padding: 0 20px;
+
+            .download-wrapper {
+                flex-direction: column;
+                padding: 45px 0 40px 0;
+            }
+
+            .download-link {
+                margin-bottom: 40px;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .help-block {
+            padding-left: 0;
+
+            &__descr {
+                padding: 0 15px;
+                .help-link {
+                    display: block;
+                }
+            }
+        }
+        .filter-container {
+            padding: 0 15px;
+
+            .filter-list__wrapper {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+        .help-block__list {
+            justify-content: center;
+        }
+        .first {
+            display: none;
+        }
+        .second {
+            display:block;
+            padding: 40px 15px 0 15px;
+        }
+        .can-you-help {
+            padding: 40px 0 40px 0;
+            @include flex(column);
+            &__list {
+                flex-direction: column;
+            }
+            &-wrapper {
+                padding: 0 15px;
+            }
+            &__title {
+                font-size: 30px;
+                line-height: 42px;
+            }
+        }
+        
+        .page-off {
+            display: none;
+        }
+    }
+}

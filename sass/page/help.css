@@ -1,0 +1,58 @@
+.help .card-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.help .site-main {
+  padding-top: 0;
+}
+
+.help .site-main .container {
+  padding-top: 40px;
+}
+
+.help .site-main .main-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.help .help-block {
+  padding-top: 0;
+}
+
+.help .help-block__list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.help .help-block__descr {
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 35px;
+}
+
+.help .filter__form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.help .filter__form .filter__field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.help .filter__form .filter__submit {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+/*# sourceMappingURL=help.css.map */

@@ -1,0 +1,19 @@
+#breadcrumbs {
+    font-size: 14px;
+    line-height: 15px;
+    color: $text-black;
+    margin-bottom: 32px;
+
+    a {
+        font-size: 14px;
+        line-height: 15px;
+        color: $text-black;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #breadcrumbs {
+        margin-bottom: 16px;
+        padding: 0 16px;
+    }
+}
