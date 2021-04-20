@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container {
   max-width: 1440px;
   width: 100%;
@@ -4532,6 +4533,37 @@ body {
   overflow: auto;
   font-size: 18px;
   line-height: 32px;
+  scrollbar-width: thin;
+  scrollbar-color: #FE5A0E #E5E5E5;
+  /* полоса прокрутки (скроллбар) */
+  /* ползунок скроллбара */
+  /* Стрелки */
+}
+
+.pens .pension .pension-info .pension__descr::-webkit-scrollbar {
+  width: 6px;
+  height: 8px;
+  background-color: #E5E5E5;
+  border-radius: 2px;
+}
+
+.pens .pension .pension-info .pension__descr::-webkit-scrollbar-thumb {
+  background-color: #FE5A0E;
+  border-radius: 2px;
+}
+
+.pens .pension .pension-info .pension__descr::-webkit-scrollbar-thumb:hover {
+  background-color: #a13a0a;
+}
+
+.pens .pension .pension-info .pension__descr::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+
+.pens .pension .pension-info .pension__descr ::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
 }
 
 .pens .pension .gallery-top {
@@ -4563,10 +4595,8 @@ body {
 .pens .pension .card-item__btn {
   width: 32px;
   height: 32px;
-  background: #F7F7F6;
   border-radius: 2px;
   position: absolute;
-  bottom: 35px;
   margin: auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4583,6 +4613,11 @@ body {
           align-items: center;
   cursor: pointer;
   z-index: 3;
+}
+
+.pens .pension .prev-pans, .pens .pension .next-pans {
+  background: #F7F7F6;
+  bottom: 35px;
 }
 
 .pens .pension .prev-btn {
@@ -4776,6 +4811,11 @@ body {
 }
 
 .pens .pension .pension-content .add-feed {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  display: block;
   padding: 14px 32px;
   border: 1px solid #FE5A0E;
   background-color: #fff;
@@ -5004,6 +5044,15 @@ body {
     text-align: center;
   }
   .pens .pension__head-btn .btn-pension-help .btn-money {
+    margin-bottom: 20px;
+  }
+  .pens .pension .pension-content .feedback-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pens .pension .pension-content .feedback-item .feedback-author {
     margin-bottom: 20px;
   }
   .pens .pension-tabs__item {

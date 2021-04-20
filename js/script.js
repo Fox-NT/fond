@@ -48,10 +48,42 @@ document.addEventListener('keydown', e => {
 	}
 });
 
-const filterBtn = document.querySelector('.filter-btn'),
-	filter = document.querySelector('.filter');
+const tab = document.querySelectorAll('.pension-tabs__item'),
+	tabList = document.querySelector('.pension-tabs__list'),
+	content = document.querySelectorAll('.pension__content');
 
-filterBtn.addEventListener('click', e => {
-	e.preventDefault();
-	filter.classList.toggle('mobile-off');
+tabList.addEventListener('click', event => {
+	const target = event.target;
+
+	if (target && target.classList.contains('pension-tabs__item')) {
+		tab.forEach((item, i) => {
+			if (target == item) {
+				hideContent();
+				showContent(i);
+			}
+		});
+	}
 });
+
+function hideContent() {
+	tab.forEach(el => {
+		el.classList.remove('pension-tabs__item--active');
+	});
+	content.forEach(el => {
+		el.style.display = 'none';
+	});
+}
+function showContent(i = 0) {
+	tab[i].classList.add('pension-tabs__item--active');
+	content[i].style.display = 'block';
+}
+
+function showCountFeedback() {
+	const count = document.querySelector('.feed-count'),
+		feedbackItem = document.querySelectorAll('.feedback-item');
+	count.innerHTML = `${feedbackItem.length}`;
+}
+
+showCountFeedback();
+hideContent();
+showContent();

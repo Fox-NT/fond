@@ -335,11 +335,6 @@
                                                         <div class="swiper-slide"><img src="img/images/bigimg.jpg" alt=""></div>
                                                         <div class="swiper-slide"><img src="img/images/bigimg.jpg" alt=""></div>
                                                         <div class="swiper-slide"><img src="img/images/bigimg.jpg" alt=""></div>
-                                                        <div class="swiper-slide"><img src="img/images/bigimg.jpg" alt=""></div>
-                                                        <div class="swiper-slide"><img src="img/images/bigimg.jpg" alt=""></div>
-                                                        <div class="swiper-slide"><img src="img/images/bigimg.jpg" alt=""></div>
-                                                        <div class="swiper-slide"><img src="img/images/bigimg.jpg" alt=""></div>
-                                                        <div class="swiper-slide"><img src="img/images/bigimg.jpg" alt=""></div>
                                                     </div>
                                                     
                                                   </div>
@@ -370,13 +365,6 @@
                                                         <div class="swiper-slide"><img src="img/images/thums3.jpg" alt=""></div>
                                                         <div class="swiper-slide"><img src="img/images/thums4.jpg" alt=""></div>
                                                         <div class="swiper-slide"><img src="img/images/thums5.jpg" alt=""></div>
-                                                        <div class="swiper-slide"><img src="img/images/thums6.jpg" alt=""></div>
-                                                        <div class="swiper-slide"><img src="img/images/thums1.jpg" alt=""></div>
-                                                        <div class="swiper-slide"><img src="img/images/thums2.jpg" alt=""></div>
-                                                        <div class="swiper-slide"><img src="img/images/thums3.jpg" alt=""></div>
-                                                        <div class="swiper-slide"><img src="img/images/thums4.jpg" alt=""></div>
-                                                        <div class="swiper-slide"><img src="img/images/thums5.jpg" alt=""></div>
-                                                        <div class="swiper-slide"><img src="img/images/thums6.jpg" alt=""></div>
                                                     </div>
                                                   </div>
                                             </div>
@@ -430,7 +418,7 @@
                                             <div class="pension-tabs">
                                                 <div class="pension-tabs__list">
                                                     <div class="pension-tabs__item pension-tabs__item--active">Что нужно</div>
-                                                    <div class="pension-tabs__item">Отзывы (5)</div>
+                                                    <div class="pension-tabs__item">Отзывы (<span class="feed-count">5</span>)</div>
                                                     <div class="pension-tabs__item">Отчеты</div>
                                                 </div>
                                             </div>
@@ -535,8 +523,12 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="pension-content__text">Благотворительный фонд «Помощь пожилым» на постоянной основе поддерживает связь с «Пансионатом ветеранов Сталинграда»  и в курсе о нуждах этого учреждения. Если вы хотите помочь этому пансионату, вы можете оставить заявку на нашем сайте или написать на почту <a href="mailto:info@1pansion.ru">info@1pansion.ru</a> , описав какую помощь вы готовы оказать.
-
+                                            </div>
+                                            <div class="pension__content pension-content">
+                                                <div class="pension-content__title"><h3>Отчеты</h3>
+                                                </div>
+                                                <div class="pension-content__list">
+                                                    Здесь пока пусто!
                                                 </div>
                                             </div>
                                         </div>
@@ -1118,23 +1110,6 @@
 			<div class="btn_up"><i class="fas fa-arrow-up"></i></div>
 		</footer>
 		<script>
-			const swiper = new Swiper('.main-slider', {
-				// Optional parameters
-				loop: true,
-				speed: 200,
-				autoplay: true,
-				pagination: {
-					el: '.slider-nav__count',
-					clickable: true,
-					renderBullet: function (index, className) {
-						return '<span class="' + className + '">' + (index + 1) + '</span>';
-					},
-				},
-				navigation: {
-					nextEl: '.slider-nav__btn-next',
-					prevEl: '.slider-nav__btn-prev',
-				},
-			});
 			const swiper1 = new Swiper('.block1', {
 				loop: true,
 				speed: 200,
@@ -1162,126 +1137,23 @@
 					prevEl: '.prev3',
 				},
 			});
-			const swiper4 = new Swiper('.block4', {
-				loop: true,
-				speed: 200,
-				autoplay: false,
-				navigation: {
-					nextEl: '.next4',
-					prevEl: '.prev4',
-				},
-			});
-			const swiper5 = new Swiper('.block5', {
-				loop: true,
-				speed: 200,
-				autoplay: false,
-				navigation: {
-					nextEl: '.next5',
-					prevEl: '.prev5',
-				},
-			});
-			const swiper6 = new Swiper('.block6', {
-				loop: true,
-				speed: 200,
-				autoplay: false,
-				navigation: {
-					nextEl: '.next6',
-					prevEl: '.prev6',
-				},
-			});
-			
-			const swiper7 = new Swiper('.block7', {
-				loop: true,
-				speed: 200,
-				autoplay: false,
-				navigation: {
-					nextEl: '.next7',
-					prevEl: '.prev7',
-				},
-			});
-			
-			const swiper8 = new Swiper('.block8', {
-				loop: true,
-				speed: 200,
-				autoplay: false,
-				navigation: {
-					nextEl: '.next8',
-					prevEl: '.prev8',
-				},
-			});
-			
-			const swiper9 = new Swiper('.block9', {
-				loop: true,
-				speed: 200,
-				autoplay: false,
-				navigation: {
-					nextEl: '.next9',
-					prevEl: '.prev9',
-				},
-			});
-			
-			const swiper10 = new Swiper('.block10', {
-				loop: true,
-				speed: 200,
-				autoplay: false,
-				navigation: {
-					nextEl: '.next10',
-					prevEl: '.prev10',
-				},
-			});
-			
-			const swiper11 = new Swiper('.block11', {
-				loop: true,
-				speed: 200,
-				autoplay: false,
-				navigation: {
-					nextEl: '.next11',
-					prevEl: '.prev11',
-				},
-			});
-			
-			const swiper12 = new Swiper('.block12', {
-				loop: true,
-				speed: 200,
-				autoplay: false,
-				navigation: {
-					nextEl: '.next12',
-					prevEl: '.prev12',
-				},
-			});
 			const car = new Swiper('.car', {
-				loop: true,
 				speed: 200,
 				autoplay: true,
 				slidesPerView: 'auto',
 				spaceBetween: 30,
 				freeMode: true,
 			});
-			const feedslider = new Swiper('.feedslider', {
-				loop: true,
-				speed: 200,
-				autoplay: true,
-				slidesPerView: 'auto',
-				spaceBetween: 60,
-				freeMode: true,
-				navigation: {
-					nextEl: '.feed-next',
-					prevEl: '.feed-prev',
-				},
-			});
+
             var galleryThumbs = new Swiper('.gallery-thumbs', {
                 spaceBetween: 10,
                 slidesPerView: 3,
-                loop: true,
                 freeMode: true,
-                loopedSlides: 5, //looped slides should be the same
                 watchSlidesVisibility: true,
                 watchSlidesProgress: true,
                 });
             var galleryTop = new Swiper('.gallery-top', {
                 spaceBetween: 10,
-                loop: true,
-                loopedSlides: 3, //looped slides should be the same
                 navigation: {
                     nextEl: '.next-pans',
                     prevEl: '.prev-pans',

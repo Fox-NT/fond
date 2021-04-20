@@ -1880,23 +1880,6 @@
 			<div class="btn_up"><i class="fas fa-arrow-up"></i></div>
 		</footer>
 		<script>
-			const swiper = new Swiper('.main-slider', {
-				// Optional parameters
-				loop: true,
-				speed: 200,
-				autoplay: true,
-				pagination: {
-					el: '.slider-nav__count',
-					clickable: true,
-					renderBullet: function (index, className) {
-						return '<span class="' + className + '">' + (index + 1) + '</span>';
-					},
-				},
-				navigation: {
-					nextEl: '.slider-nav__btn-next',
-					prevEl: '.slider-nav__btn-prev',
-				},
-			});
 			const swiper1 = new Swiper('.block1', {
 				loop: true,
 				speed: 200,
@@ -2012,25 +1995,14 @@
 				},
 			});
 			const car = new Swiper('.car', {
-				loop: true,
+				loop: false,
 				speed: 200,
 				autoplay: true,
 				slidesPerView: 'auto',
 				spaceBetween: 30,
 				freeMode: true,
 			});
-			const feedslider = new Swiper('.feedslider', {
-				loop: true,
-				speed: 200,
-				autoplay: true,
-				slidesPerView: 'auto',
-				spaceBetween: 60,
-				freeMode: true,
-				navigation: {
-					nextEl: '.feed-next',
-					prevEl: '.feed-prev',
-				},
-			});
+			
 		</script>
 		<script src="js/script.js"></script>
 	</body>
